@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registeration</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" href="WhatsApp_Image_2025-02-10_at_12.01.39_AM-removebg-preview.png">
+    
+</head>
+<body>
+   <img src="1.jpg" id="diaz" height="300px" alt=""> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+   <img src="2.jpg" id="messi" height="300px" alt="">
+
+   <p> "Quality brought Adidas to the top and only quality guarantees our success." </p>
+   <img src="WhatsApp_Image_2025-02-10_at_12.01.39_AM-removebg-preview.png" height="250px" id="adidas" alt="">
+   <p>"Innovate - don't imitate."</p>
+   <br> <br> <br> <br> <br> <br><br>
+    <h1 id="head">Register</h1>
+<div>
+    <form action="" method="post" id="registeration">
+<label for="firstname">First name : </label>
+<input type="text" name="firstname" class="input"
+maxlength="30"  id="firstname">
+<br> <br>
+<label for="lastname">Last name : </label>
+<input type="text" name="lastname"  class="input"
+maxlength="30"  id="lastname">
+<br> <br>
+<label for="password">Password :</label>
+<input type="password" name="password" id="password" required class="input"
+minlength="8" maxlength="14" > <br> <br>
+<label for="email">Email : </label>
+<input type="email" id="email"  class="input" required> <br> <br>
+<label for="birthday">Date Of Birth : </label>
+<input type="date" id="birthday" class="input" required> <br> <br>
+<label for="male">Male : </label>
+<input type="radio" id="male" class="input" name="gender" required> <br> <br>
+<label for="female">Female :</label>
+<input type="radio" id="female" class="input" name="gender"> <br> <br>
+
+<button type="submit" id="button"> Register</button>
+<button onclick="darktheme()" class="theme" ><img src="darkmode-removebg-preview.png" height="40px"></button>
+<button onclick="whitetheme()" class="theme"><img src="whitemode.jpg" height="40px"> </button>
+<button type="reset">Reset</button>
+
+</form>
+<script src="register.js"></script>
+</div>    
+</body>
+</html>

@@ -1,0 +1,321 @@
+body{
+    background-image:url(image.jpg);
+    color: white;
+}
+
+
+#adidas::first-letter{
+    font-size: 120px;
+    color: rgb(133, 29, 63);
+}
+#adidas{
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 10%;
+}
+#links{
+   font-size: 25px;
+   padding: 10px 10%;
+   display: flex;
+   justify-content: space-between;
+   
+  
+}
+#links a{
+    color: aliceblue;
+   
+}
+#Home:hover{
+    font-size: 35px;
+    color: aquamarine;
+
+}
+#Services:hover{
+    font-size: 35px;
+    color: aquamarine;
+
+}
+#About:hover{
+    font-size: 35px;
+    color: aquamarine;
+}
+
+#Contact:hover{
+    font-size: 35px;
+    color: aquamarine;
+}
+.header{
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: rgb(234, 240, 240);
+    font-family:' sans-serif';
+    text-shadow: 3px 2px 3px red;
+    margin-left: 150px;
+    font-size: 80px;
+    
+    
+}
+table{
+    border: 3px solid rgb(33, 116, 84);
+   margin-left: 150px;
+   font-size: 50px
+    
+}
+#image{
+ position: relative;
+ right: 450px;
+
+}
+
+.homepage{
+font-size: 10px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+letter-spacing: 3px;
+height: 150px;
+width: 150px;
+background-color: rgb(24, 25, 90);
+color: black;
+font-weight: 500;
+transition: 0.5s ease;
+border-radius: 20px;
+margin: auto;
+float: left;
+display: flex;
+justify-content: space-between;
+
+}
+.homepage:hover{
+    transform: rotate(40deg);
+}
+#salah{
+    float: left;
+    margin-right: 30px;
+
+
+    
+}
+#about{
+    font-size: 120px;;
+    font-family: ' sans-serif';
+    margin-left: 500px;
+    text-shadow: 3px 2px 3px red;
+}
+#jenna{
+    float: right;
+    margin-left: 40px;
+}
+.aboutus{
+    font-size: 45px;
+
+}
+.jacket{
+ 
+    transform: translate(20px);
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+}
+#bluejacket:hover{
+   transition: 0.8s ease;
+    transform: translate(100px,50px);
+}
+#redjacket:hover{
+    transition: 0.8s ease;
+     transform: translate(100px,50px);
+ }
+ #blackjacket:hover{
+    transition: 0.8s ease;
+     transform: translate(100px,50px);
+ }
+ #whitejacket:hover{
+    transition: 0.8s ease;
+     transform: translate(100px,50px);
+ }
+#jackets{
+    font-size: 80px;
+    font-family: sans-serif;
+    text-shadow: 3px 2px 3px red;
+}
+#ptext{
+    background: black;
+    border: 3px solid;
+    border-radius: 15px;
+    margin-left: 10px;
+   
+
+}
+#adidasmodel{
+    float: left;
+    margin-right: 40px;
+}
+
+.username{
+    font-size: 40px;
+    border: 2px solid aquamarine;
+    border-radius: 3px;
+    background: black;
+    color: white;
+
+
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    animation-name: display;
+    animation-duration: 2s;
+    animation-fill-mode: alternate;
+    animation-iteration-count: 1;
+    transition: all 0.5s ease;
+}
+
+#product1{
+    animation-name: display;
+    animation-delay: 2s;
+    animation-duration: 3s;
+}
+
+#product2{
+    animation-name: display;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    
+}
+#product3{
+    animation-name: display;
+    animation-duration: 3s;
+    animation-delay: 8s;
+    
+}
+#product4{ 
+    animation-name: display;
+    animation-duration: 3s;
+    animation-delay: 11s;
+}
+@keyframes display {
+
+    0%{
+       scale: 1;
+
+
+    }
+    50%{
+        scale: 1.15;
+        transform: matrix(30px,10px);
+    }
+    100%{
+        
+
+    }
+    
+    
+}
+
+@media (min-width : 500px) and (max-width:780px) {
+    body{
+        font-size: 25px;
+        height: 350px;
+        width: 350px;
+    }
+    .products{
+        height: 100px;
+        width:100px ;
+    }
+    #salah{
+        height: 200px;
+    }
+    .header{
+        font-size: 13px;
+        margin: right;
+    }
+    #links{
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    
+    
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px; 
+    margin: 0 auto; 
+  }
+  
+ 
+  .mySlides {
+    display: none;
+  }
+  
+
+  .mySlides:first-child {
+    display: block;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  .slideshow-container{
+    float: left;
+    margin-right: 30px;
+    margin-top: 100px;
+    margin-left: 30px;
+    overflow: auto;
+    height: 680px;
+  }
+  #paragraph{
+    font-size: 40px;
+    background-color: black;
+    letter-spacing: 2px;
+    border: 3px solid white;
+    margin-right: 30px;
+
+  }
